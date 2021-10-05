@@ -2,6 +2,11 @@
     margin: 0 50px;
 }
 
+.container-flex {
+    margin: 0 50px;
+    display: flex;
+}
+
 .header {
     background-image: url(img/hero-bg.jpg);
     height: 90vh;
@@ -17,7 +22,7 @@
 }
 
 .navbar a {
-    padding: 0 20px;
+    margin: 0 20px;
     font-family: Montserrat;
     text-decoration: none;
     color: white;
@@ -65,11 +70,9 @@ ul {
 
 .main {
     font-family: Montserrat;
-    max-height: 100px;
     display: flex;
     text-align: center;
     font-weight: 400;
-    padding-bottom: 100px;
 }
 
 .about {
@@ -93,8 +96,12 @@ ul {
     margin-right: auto;
 }
 
+.currentpage {
+    border-bottom: 3px solid #FFE600;
+}
+
 .footer {
-    font-weight: 700;
+    font-weight: 400;
     color: rgb(177, 177, 177);
     font-family: Montserrat;
     background-color: rgb(207, 207, 207);
@@ -120,3 +127,34 @@ ul {
     color: black;
     font-size: 50px;
 }
+
+.footerend {
+    margin: 10px 0px;
+    font-weight: 500;
+}
+
+.main-text {
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 700px) {
+    .header {
+    background-size: 900vh;
+    }
+    
+    .header {
+        padding-bottom: 100px;
+    }
+
+    .container-flex {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+  }
